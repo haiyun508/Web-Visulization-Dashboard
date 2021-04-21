@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web-Design-Challenge</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-white">
+    <a href="#" class="btn btn-primary" role="button" style="padding-right:50; background-color:green;">Latitude</a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"> </div>
+    <ul class="navbar-nav mr-auto px-200">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black">
+             Plots   
+            </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Max Temperature</a>
+            <a class="dropdown-item" href="#">Humidity</a>
+            <a class="dropdown-item" href="#">Cloudiness</a>
+            <a class="dropdown-item" href="#">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item active"> 
+            <a class="nav-link" href="#" style="color:black">Comparison <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="color:black">Data</a>
+        </li>
+    </ul>
+  </nav>
+
+<div class="container p-5 bg-info">
+  <div class="row">
+    <div class="col-md-6 ml-5 mr-5 bg-light">
+        <h2 class="display-5 mt-5 text-success">Summary: Latitude vs. X</h2>
+        <hr class="my-4">
+        <img src="Resources/assets/fig1.png" width=300px,height=300px style="float:left; margin-right:30;">
+        <p float="right">
+            The purpose of this project was to analyze how weather changes as you get closer to the equator.
+            To accomplish this analysis,we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500cities.
+        </p>
+        <p>
+            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
+            temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis,
+            as well as explanations and descriptions of any trends and correlations witnessed.
+        </p>
+    </div>
+        <div class="col-md-4 bg-light">
+              <h2 class="display-10 mt-5 text-success">Visualizations</h2>
+              <hr class="my-4">
+              <div class="row">
+                <div class="col">
+                <img src="Resources/assets/fig1.png" width=140px,height=140px >
+                </div>
+                <div class="col">
+                <img src="Resources/assets/fig2.png" width=140px,height=140px >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                <img src="Resources/assets/fig3.png" width=140px,height=140px >
+                </div>
+                <div class="col">
+                <img src="Resources/assets/fig4.png" width=140px,height=140px >
+                </div>
+              </div>
+              <!-- <img src="Resources/assets/fig1.png" width=300px,height=300px style="float:left; margin-right:30;">
+              <img src="Resources/assets/fig2.png" width=300px,height=300px style="float:left; margin-right:30;">
+              <img src="Resources/assets/fig3.png" width=300px,height=300px style="float:left; margin-right:30;">
+              <img src="Resources/assets/fig4.png" width=300px,height=300px style="float:left; margin-right:30;"> -->
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web-Design-Challenge</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-white">
+    <a href="#" class="btn btn-primary" role="button" style="padding-right:50; background-color:green;">Latitude</a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"> </div>
+    <ul class="navbar-nav mr-auto px-200">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black">
+             Plots   
+            </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Max Temperature</a>
+            <a class="dropdown-item" href="#">Humidity</a>
+            <a class="dropdown-item" href="#">Cloudiness</a>
+            <a class="dropdown-item" href="#">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item active"> 
+            <a class="nav-link" href="#" style="color:black">Comparison <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="color:black">Data</a>
+        </li>
+    </ul>
+  </nav>
+
+<div class="container p-5 bg-info">
+        <div class="row ">
+            <h3 class="col-md-8 bg-light mt-5 text-success bg-light pb-5 ml-50">Comparison:Latitude vs X</h3>
+        </div>
+        <div class="row">
+        <P class="col-md-8 bg-light mt-5 text-success bg-light pb-5">
+            Click any plot to get an in-depth analysis
+        </P>
+        </div>
+        <div class="row">
+        <div class="col-md-4 bg-light ml-100">
+            <h4 class="display-10 mt-5 text-success">vs. Max Temperature</h4>
+            <img src="Resources/assets/fig1.png" width=140px,height=140px >
+         </div>
+         <div class="col-md-4 bg-light">
+            <h4 class="display-10 mt-5 text-success">vs. Humidity</h4>
+            <img src="Resources/assets/fig2.png" width=140px,height=140px >
+         </div>
+         </div>
+        <div class="row">
+            <div class="col-md-4 bg-light ml-100">
+               <h4 class="display-10 mt-5 text-success">vs. Cloudiness</h4>
+               <img src="Resources/assets/fig3.png" width=140px,height=140px >
+            </div>
+            <div class="col-md-4 bg-light pb-5">
+               <h4 class="display-10 mt-5 text-success">vs. Windspeed</h4>
+               <img src="Resources/assets/fig4.png" width=140px,height=140px >
+            </div>
+        </div>
+</div>
+
+</body>
+
+</html>
