@@ -39,49 +39,44 @@
 <div class="container-fluid p-5 bg-info">
   <div class="row">
     <div class="col-md-6 ml-5 mr-5 bg-light">
-        <h2 class="display-5 mt-5 text-success">Summary: Latitude vs. X</h2>
+        <h2 class="display-5 mt-5 text-success">Max Temperature</h2>
         <hr class="my-4">
-        <img src="Resources/assets/fig1.png" width=300px,height=300px style="float:left; margin-right:30;">
+        <img src="Resources/assets/fig1.png" width=300px,height=300px style="float:botomn; margin-right:30;">
         <p float="right">
-            The purpose of this project was to analyze how weather changes as you get closer to the equator.
-            To accomplish this analysis,we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500cities.
-        </p>
-        <p>
-            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
-            temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis,
-            as well as explanations and descriptions of any trends and correlations witnessed.
+        As expected, the weather becomes significantly warmer as one approaches the equator(0 Deg.Latitude). More interestingly, however,
+        is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt 
+        of the earth at the time of the year this data was gathered.   
         </p>
     </div>
-
-    <div class="col-md-4 bg-light pb-2">
-      <h2 class="display-10 mt-5 text-success">Visualizations</h2>
-      <hr class="my-4">
-      <div class="row">
-        <div class="col-md-6">
-          <a href="http://127.0.0.1:5500/max_temperature.html">
-           <img src="Resources/assets/fig1.png" width=140px,height=140px >
-          </a>
+        <div class="col-md-4 bg-light pb-2">
+              <h2 class="display-10 mt-5 text-success">Visualizations</h2>
+              <hr class="my-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="http://127.0.0.1:5500/max_temperature.html">
+                   <img src="Resources/assets/fig1.png" width=140px,height=140px >
+                  </a>
+                </div>
+                <div class="col-md-6">
+                 <a href="humidity.html">
+                  <img src="Resources/assets/fig2.png" width=140px,height=140px >
+                </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                 <a href="cloudiness.html">
+                  <img src="Resources/assets/fig3.png" width=140px,height=140px >
+                 </a>
+                </div>
+                <div class="col-md-6">
+                 <a href="windspeed.html">
+                  <img src="Resources/assets/fig4.png" width=140px,height=140px >
+                 </a>
+                </div>
+              </div>
         </div>
-        <div class="col-md-6">
-         <a href="humidity.html">
-          <img src="Resources/assets/fig2.png" width=140px,height=140px >
-        </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-         <a href="cloudiness.html">
-          <img src="Resources/assets/fig3.png" width=140px,height=140px >
-         </a>
-        </div>
-        <div class="col-md-6">
-         <a href="windspeed.html">
-          <img src="Resources/assets/fig4.png" width=140px,height=140px >
-         </a>
-        </div>
-      </div>
-</div>
-</div>
+    </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

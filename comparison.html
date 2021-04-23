@@ -10,63 +10,78 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-white">
-    <a href="#" class="btn btn-primary" role="button" style="padding-right:50; background-color:green;">Latitude</a> 
+    <a href="index.html" class="btn btn-primary" role="button" style="padding-right:50; background-color:green;">Latitude</a> 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent"> </div>
     <ul class="navbar-nav mr-auto px-200">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black">
              Plots   
             </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Max Temperature</a>
-            <a class="dropdown-item" href="#">Humidity</a>
-            <a class="dropdown-item" href="#">Cloudiness</a>
-            <a class="dropdown-item" href="#">Wind Speed</a>
+            <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
           </div>
         </li>
         <li class="nav-item active"> 
-            <a class="nav-link" href="#" style="color:black">Comparison <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="comparison.html" style="color:black">Comparison <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" style="color:black">Data</a>
+            <a class="nav-link" href="data.html" style="color:black">Data</a>
         </li>
     </ul>
   </nav>
-
-<div class="container p-5 bg-info">
-        <div class="row ">
-            <h3 class="col-md-8 bg-light mt-5 text-success bg-light pb-5 ml-50">Comparison:Latitude vs X</h3>
+  <div class="container-fluid p-5 m-0 bg-info">
+   <div class="row align-items-center ml-5">
+    <div class="col-md-10 ml-5 mr-5 bg-light">
+      <h3 class="bg-light mt-4 text-success bg-light pb-1 ml-3">Comparison: Latitude vs X</h3>
+      <P class="bg-light mt-3 text-success bg-light ml-3">
+        Click any plot to get an in-depth analysis
+      </P>
+      <div class="row align-items-center ml-5">
+        <div class="col-sm-10 col-md-5 mt-1 ml-4">
+          <h5 class="display-10 mt-5 ml-5 text-success">vs. Max Temperature</h5>
+          <a href="http://127.0.0.1:5500/max_temperature.html">
+            <img src="Resources/assets/fig1.png" width=300px,height=300px >
+          </a>
         </div>
-        <div class="row">
-        <P class="col-md-8 bg-light mt-5 text-success bg-light pb-5">
-            Click any plot to get an in-depth analysis
-        </P>
+        <div class="col-sm-10 col-md-5 mt-1 mr-5">
+          <h5 class="display-10 mt-5 ml-5 text-success">vs. Humidity</h5>
+          <a href="humidity.html">
+            <img src="Resources/assets/fig2.png" width=300px,height=300px >
+          </a>
         </div>
-        <div class="row">
-        <div class="col-md-4 bg-light ml-100">
-            <h4 class="display-10 mt-5 text-success">vs. Max Temperature</h4>
-            <img src="Resources/assets/fig1.png" width=140px,height=140px >
-         </div>
-         <div class="col-md-4 bg-light">
-            <h4 class="display-10 mt-5 text-success">vs. Humidity</h4>
-            <img src="Resources/assets/fig2.png" width=140px,height=140px >
-         </div>
-         </div>
-        <div class="row">
-            <div class="col-md-4 bg-light ml-100">
-               <h4 class="display-10 mt-5 text-success">vs. Cloudiness</h4>
-               <img src="Resources/assets/fig3.png" width=140px,height=140px >
-            </div>
-            <div class="col-md-4 bg-light pb-5">
-               <h4 class="display-10 mt-5 text-success">vs. Windspeed</h4>
-               <img src="Resources/assets/fig4.png" width=140px,height=140px >
-            </div>
+      </div>
+      <div class="row align-items-center ml-5">
+        <div class="col-sm-10 col-md-5 ml-4 mb-5">
+          <h5 class="display-10 mt-5 ml-5 text-success">vs. Cloudiness</h5>
+          <a href="cloudiness.html">
+            <img src="Resources/assets/fig3.png" width=300px,height=300px >
+          </a> 
         </div>
-</div>
+        <div class="col-sm-10 col-md-5 mb-5 mr-5">
+          <h5 class="display-10 mt-5 ml-5 text-success">vs. Wind Speed</h5>
+          <a href="windspeed.html">
+            <img src="Resources/assets/fig4.png" width=300px,height=300px >
+          </a>        
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  
+  </html>
 
-</body>
 
-</html>
+
+
+
+
