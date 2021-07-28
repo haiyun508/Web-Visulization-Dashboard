@@ -2,7 +2,7 @@
 
 ## Summary
 
-Data is more powerful when we share it with others! I create a dashboard showing the latitude analysis i have done in a different project. Tools are used here are mainly HTML, CSS and Bootstrap. 
+Data is more powerful when we share it with others! I create a dashboard showing the latitude analysis i have done in a different project. Tools are used here are mainly HTML, CSS and Bootstrap. The website is also deployed to GitHub pages https://haiyun508.github.io/Web-Visulization-Dashboard/index.html
 
 ![Images/landingResize.png](visualizations/landingResize.png)
 
